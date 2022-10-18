@@ -1,4 +1,5 @@
 import React from 'react';
+import HomeButton from './src/components/buttons/HomeButton';
 import IconButton from './src/components/buttons/IconButton';
 import PrimaryButton from './src/components/buttons/PrimaryButton';
 import SecondaryButton from './src/components/buttons/SecondaryButton';
@@ -16,7 +17,7 @@ import SignupScreen from './src/screens/SignupScreen';
 import SplashScreen from './src/screens/SplashScreen';
 
 function App() {
-  return <BottomNavbar />;
+  return <HomeScreen />;
   // <>
   //   /* <TextField name="Enter Your Name" color="primary" />
   //   <TextField name="Date of birth" /> */
