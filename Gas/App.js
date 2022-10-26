@@ -13,11 +13,12 @@ import HomeScreen from './src/screens/HomeScreen';
 import LoginScreen from './src/screens/LoginScreen';
 import PasswordScreen from './src/screens/PasswordScreen';
 import PractiseScreen from './src/screens/PractiseScreen';
+import ProfileScreen from './src/screens/ProfileScreen';
 import SignupScreen from './src/screens/SignupScreen';
 import SplashScreen from './src/screens/SplashScreen';
 
 function App() {
-  return <HomeScreen />;
+  return <ProfileScreen />;
   // <>
   //   /* <TextField name="Enter Your Name" color="primary" />
   //   <TextField name="Date of birth" /> */
