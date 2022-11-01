@@ -3,7 +3,7 @@ import React from 'react'
 import TopNavbar from '../components/navigationBars/TopNavbar'
 import BottomNavbar from '../components/navigationBars/BottomNavbar'
 import HomeButton from '../components/buttons/HomeButton'
-import Carousel from 'react-native-snap-carousel'
+
 import colors from '../assets/colors'
 
 const users = [{
