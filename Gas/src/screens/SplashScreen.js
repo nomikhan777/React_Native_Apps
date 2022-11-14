@@ -1,13 +1,14 @@
-import {View, Text, StyleSheet, Image} from 'react-native';
+import { View, Text, StyleSheet, Image, Button } from 'react-native';
 import React from 'react';
 import colors from '../assets/colors';
 import img1 from '../assets/images/gas.png';
 
-const SplashScreen = () => {
+const SplashScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Image style={styles.logo} source={img1} />
       <Text style={styles.text}>SERVIO</Text>
+      <Button onPress={() => navigation.navigate('LoginScreen')} title='next screen'></Button>
     </View>
   );
 };

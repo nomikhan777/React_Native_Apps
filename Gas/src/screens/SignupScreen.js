@@ -31,6 +31,7 @@ const SignupScreen = () => {
                     <SecondaryButton text="Send OTP" />
                 </View>
             </View>
+
         </View>
     )
 }
