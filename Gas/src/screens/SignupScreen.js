@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image } from 'react-native'
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import img2 from '../assets/images/gas.png';
@@ -7,7 +7,7 @@ import colors from '../assets/colors';
 import TextField from '../components/inputFields/TextField';
 import SecondaryButton from '../components/buttons/SecondaryButton';
 
-const SignupScreen = () => {
+const SignupScreen = ({ navigation }) => {
     return (
         <View style={styles.conatiner}>
             <View style={{ flexDirection: 'row', marginVertical: 15, marginHorizontal: 20, justifyContent: 'space-between' }}>
@@ -28,7 +28,7 @@ const SignupScreen = () => {
                     <TextField name="Mobile Number" holderColor={'#eee'} color={'white'} />
                 </View>
                 <View style={{ marginTop: 40, alignItems: 'center', marginBottom: 40 }}>
-                    <SecondaryButton text="Send OTP" />
+                    <SecondaryButton text={"Send OTP"} />
                 </View>
             </View>
 

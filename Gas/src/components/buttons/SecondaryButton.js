@@ -2,13 +2,23 @@ import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
 import React from 'react'
 import { useState } from 'react'
 import colors from '../../assets/colors'
+import { useNavigation } from '@react-navigation/native'
 
 const SecondaryButton = (props) => {
     const [active, setactive] = useState(false);
+    const navigation = useNavigation()
 
     function handleSecondPress() {
         setactive(!active)
-        console.log("active")
+        if (props.text === 'Send OTP') {
+
+            navigation.navigate('CreateAccountScreen')
+        }
+
+        else if (props.text === 'Continue') {
+            navigation.navigate('HomeScreen')
+
+        }
     }
 
     return (

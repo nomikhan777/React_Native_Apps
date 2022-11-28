@@ -7,7 +7,7 @@ import colors from '../assets/colors';
 import TextField from '../components/inputFields/TextField';
 import SecondaryButton from '../components/buttons/SecondaryButton';
 
-const CreateAccountScreen = () => {
+const CreateAccountScreen = ({ navigation }) => {
     return (
         <View style={styles.conatiner}>
             <View style={{ flexDirection: 'row', marginVertical: 15, marginHorizontal: 20, justifyContent: 'space-between' }}>
@@ -38,7 +38,7 @@ const CreateAccountScreen = () => {
                     <TextField name="Confirm Password" holderColor={'#eee'} color={'white'} />
                 </View>
                 <View style={{ marginTop: 25, alignItems: 'center', marginBottom: 40 }}>
-                    <SecondaryButton text="Continue" />
+                    <SecondaryButton text="Continue" navigation={navigation} />
                 </View>
             </View>
         </View>

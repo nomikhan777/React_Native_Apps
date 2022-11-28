@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image, Button } from 'react-native';
+import { View, Text, StyleSheet, Image, Button, TouchableOpacity } from 'react-native';
 import React from 'react';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import colors from '../assets/colors';
@@ -33,9 +33,9 @@ const LoginScreen = ({ navigation }) => {
             <View>
               <TextField name="Password" icon={'eye-with-line'} />
             </View>
-            <Text style={{ alignSelf: 'flex-end', margin: 5 }}>
-              Forgot Password
-            </Text>
+            <TouchableOpacity onPress={() => navigation.navigate('PasswordScreen')} title='Reset Password' style={{ alignSelf: 'flex-end', margin: 5 }}>
+              <Text> Forgot Password</Text>
+            </TouchableOpacity>
             <View style={{ marginTop: 30, alignItems: 'center' }}>
               <SecondaryButton text="Login" />
             </View>
